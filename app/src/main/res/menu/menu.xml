@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:id="@+id/navHome"
+        android:icon="@drawable/ic__home_nav_white"
+        android:title="Home"/>
+
+    <item
+        android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/navEditSettings"
+                android:title="Settings"
+                android:icon="@drawable/ic_app_settings"/>
+            <item
+                android:id="@+id/navEditProfile"
+                android:title="Edit profile"
+                android:icon="@drawable/ic_edit"/>
+            <item
+                android:id="@+id/navLogout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+    <item
+        android:title="Comunication">
+        <menu>
+            <item
+                android:id="@+id/navShare"
+                android:title="Share"
+                android:icon="@drawable/ic_share_nav"/>
+        </menu>
+    </item>
+
+
+</menu>
