@@ -50,7 +50,7 @@ class PersonalEntriesFragment() : Fragment() {
 
         setupListOfDataIntoRecyclerView()
 //      tablet variant has switch button
-        ifTablet(view)
+//        ifTablet(view)
 
 
         fbAdd.setOnClickListener {
@@ -202,21 +202,21 @@ private fun updateLikes(item : ArticleData){
 
         }
     }
-    fun ifTablet(view : View){
-        if (view.findViewById<FloatingActionButton>(R.id.fbSwitch) != null) {
-            setupStaggeredDataIntoRecyclerView()
-            val switch = view.findViewById<FloatingActionButton>(R.id.fbSwitch)
-
-            switch.setOnClickListener {
-                if (currentVisibleView == LIST_VIEW) {
-                    switch.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_view_list))
-                    setupStaggeredDataIntoRecyclerView()
-                } else {
-                    switch.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_grid_view))
-                    setupListOfDataIntoRecyclerView()
-
-                }
-            }
-        }
-    }
+//    fun ifTablet(view : View){
+//        if (view.findViewById<FloatingActionButton>(R.id.fbSwitch) != null) {
+//            setupStaggeredDataIntoRecyclerView()
+//            val switch = view.findViewById<FloatingActionButton>(R.id.fbSwitch)
+//
+//            switch.setOnClickListener {
+//                if (currentVisibleView == LIST_VIEW) {
+//                    switch.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_view_list))
+//                    setupStaggeredDataIntoRecyclerView()
+//                } else {
+//                    switch.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_grid_view))
+//                    setupListOfDataIntoRecyclerView()
+//
+//                }
+//            }
+//        }
+//    }
 }
